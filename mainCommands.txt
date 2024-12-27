@@ -1,0 +1,85 @@
+git init - 	//initialize empty repo on main 
+git init -b branchName		//initialize empty repo on a branch
+
+----------------------------
+To stage a file:
+git add fileName
+git add .
+
+To unstage a file:
+git reset filename
+git reset .
+
+use 'git diff' to check file changes
+use git ls-files to check all files added to staging area
+---------------------------------------------------------
+
+Committing changes to local repo
+
+git commit fileName -m commitMessage
+git commit -m commitMessage
+
+use 'git log' or git log --oneline  for log of all commits, press 'q' to come out of git log
+
+To check what all changes have been added to local repo for a specific commit, use: git show --stat hashId    (hashId can be taken from git log --oneline)
+To check files, you can use git ls-files
+To check changes to files use git status
+
+use git rm fileName to remove a file from commit, commit again to confirm your changes
+
+use git reset commitId to reset the project to previous commit
+
+use git reset commitId hard to reset the project to previous commit state and also forcefully overwrite file changes to state of previous commit
+
+use git revert commitId to reset project to previous commit state
+
+Git reset will move the head pointer to previous commit. You will not see this history in git log. Lets say you wish to move back 2 commit. So if you do a git reset in this case, it will move to the previous commit as if 2 commits weren’t there. 
+In case of git revert, any commit will not get deleted, it will create a new commit that will exclude all changes from the commit you want to revert. So, head will be at new commit
+
+
+----------------------------
+
+remote repo
+
+git remote add aliasName repoURL
+
+use git remote or git remote -v to get list of all remotes you've added
+use git remote remove aliasName to remove remote
+
+git push aliasName main    //push in a remote branch, creates a branch if it doesn't exist
+
+git push -u aliasName branchName 	//push local branch to remote repository.
+
+
+
+----------------------------
+to pull from remote
+
+first use git fetch to use below commands: 
+The git fetch command is used to update your local repository with the latest changes from the remote repository without merging them. 
+You can then use git diff to compare the branches.
+
+To check diff between local and remote branch:   git diff <local-branch> origin/<remote-branch>
+To check diff between 2 remote branch:  	 git diff origin/<branch-one> origin/<branch-two>
+
+
+
+git pull aliasName master		// gets remote branch and merges with current branch
+
+git pull origin branchname --allow-unrelated-histories		// if repo's aren't synchronised and there are diff commit histories
+
+git fetch aliasName branchName		//gets a remote branch in a new local branch
+
+
+
+
+
+
+
+
+
+
+
+
+
+

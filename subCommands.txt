@@ -1,0 +1,59 @@
+Branching
+
+git branch branchName		//create new branch
+
+git branch			//to get list of all branches
+
+git switch branchName		//to switch branches
+
+git checkout branchName		//to switch branches
+
+git branch -d branchName	//to delete branch
+
+git push origin -d branchName	//to delete branch from remote 
+
+git merge branchName		//move to main and merge branch, use git push aliasName master to push changes to remote
+
+git branch --merged 		//shows branches that have been merged into the present branch
+
+git branch --no-merged 		//shows branches that have not been merged into present branch
+
+-------------------------------------------------------------
+Tags
+
+git tag tagName		//to add tag
+
+git tag			//to get all tags in the branch
+
+git tag -d tagName	//to delete a local tag
+
+git push origin tagName 	// to push tag to remote
+
+git push origin -d tagName 	//to delete a remote tag
+
+-------------------------------------------------------------
+Stash
+
+
+git stash -m commitMessage		//to create a stash
+
+git stash list 		//to get list of all git stashes
+
+git stash apply stashID		//to resume working on stash
+
+
+-------------------------------------------------------------
+
+git config -global user.name username	//to set username 
+git config -global user.email mail	//top set email
+
+git rebase <base> 		//Rebase the current branch onto <base>. This can be a commit ID, branch name or a tag.
+
+git clone url			//clone a remote repo
+
+git ls-files			//to get files in current working directory
+
+git ls-tree branchName 		//to get files in a specific branch
+
+
+
