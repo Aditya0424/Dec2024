@@ -1,0 +1,8 @@
+The git fetch command is used to update your local repository with the latest changes from the remote repository without merging them. 
+You can then use git diff to compare the branches.
+
+To check diff between local and remote branch:   git diff <local-branch> origin/<remote-branch>
+To check diff between 2 remote branch:  	 git diff origin/<branch-one> origin/<branch-two>
+TO check commits in the local main branch but not in the remote main branch: git log main origin/main
+
+first use git fetch to use above 3 commands: 
