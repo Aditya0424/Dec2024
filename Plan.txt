@@ -1,0 +1,46 @@
+PMAK-6618efb07b736800013eb283-c2ac1b82fb48a44088e5a72e30a7a0b1f9
+Write test cases at folder /colelction level
+
+Response Visualize
+{{$randomAddress}}
+
+Mouse hover over variables to know scope - C is for collection, E is for environment, 
+
+search customer by id
+
+diff between var, let and const
+
+CLI
+
+Authentication - basic auth, api keys, bearer tokens
+
+=======================================================
+Jenkins
+admin: f39d6d4dbc1240508e218f32992b29da
+
+=======================================================
+Complex JSONs
+
+GET api.postcodes.io/postcodes/SN1 2LP
+
+
+POST api.postcodes.io/postcodes
+{
+  "postcodes" : ["OX49 5NU", "M32 0JG", "NE30 1DP"]
+}
+
+https://openweathermap.org/current - api key : 527c9853a4afae62d51cae3473334b6c, c525007fc4c401d115b386800845d986
+
+https://api.openweathermap.org/data/2.5/weather?id={city id}&appid={API key}
+
+https://api.openweathermap.org/data/2.5/weather?q=Mumbai&appid=c525007fc4c401d115b386800845d986
+
+====================================
+https://www.youtube.com/watch?v=N34BM2CU_3g
+
+
+
+
+ssh-keygen -t ed25519 -C "adietya0424@gmail.com"
+
+SHA256:dxp/YsK8oTdm/Y7Fuyb+JRnho9hRyXa9CO6yfpyNr+4 adietya0424@gmail.com
