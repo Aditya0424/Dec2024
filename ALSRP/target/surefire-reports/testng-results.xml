@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-01-19T12:52:56 IST" name="Suite" finished-at="2025-01-19T12:53:06 IST" duration-ms="9438">
+    <groups>
+    </groups>
+    <test started-at="2025-01-19T12:52:56 IST" name="Test" finished-at="2025-01-19T12:53:06 IST" duration-ms="9438">
+      <class name="nbs.cdc.Suite.myTests">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:52:57 IST" name="setUp" finished-at="2025-01-19T12:53:01 IST" duration-ms="4054" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runFBTest(java.lang.String,java.lang.String)[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:01 IST" name="runFBTest" data-provider="dataProvider1" finished-at="2025-01-19T12:53:02 IST" duration-ms="282" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFBTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:02 IST" name="tearDown" finished-at="2025-01-19T12:53:02 IST" duration-ms="311" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:02 IST" name="setUp" finished-at="2025-01-19T12:53:03 IST" duration-ms="1635" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runFBTest(java.lang.String,java.lang.String)[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:03 IST" name="runFBTest" data-provider="dataProvider1" finished-at="2025-01-19T12:53:04 IST" duration-ms="120" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us2]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd2]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFBTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:04 IST" name="tearDown" finished-at="2025-01-19T12:53:04 IST" duration-ms="214" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:04 IST" name="setUp" finished-at="2025-01-19T12:53:05 IST" duration-ms="1631" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="runFBTest(java.lang.String,java.lang.String)[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:05 IST" name="runFBTest" data-provider="dataProvider1" finished-at="2025-01-19T12:53:06 IST" duration-ms="151" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[us3]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[pwd3]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runFBTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:nbs.cdc.Suite.myTests@54c562f7]" started-at="2025-01-19T12:53:06 IST" name="tearDown" finished-at="2025-01-19T12:53:06 IST" duration-ms="236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- nbs.cdc.Suite.myTests -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
