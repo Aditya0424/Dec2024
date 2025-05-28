@@ -1,0 +1,110 @@
+Branching: You need to commit at least one time on master before creating a new branch
+
+git branch branchName		//create new branch
+
+git branch			//to get list of all branches
+
+git switch branchName		//to switch branches
+
+git checkout branchName		//to switch branches
+
+git branch -d branchName	//to delete local branch
+
+git push origin branchName	//to move branch to remote 
+
+git push origin -d branchName	//to delete branch from remote 
+
+git merge branchName		//move to main and then use
+
+git branch --merged 		//shows branches that have been merged into the present branch
+
+git branch --no-merged 		//shows branches that have not been merged into present branch
+
+After merging also, when you do git branch, it will continue to show all the branches created including any merged branches 
+already merged with main. To check branch merge status, use the other 2 commands below it.
+
+-------------------------------------------------------------
+Tags - used to give names to specific version in the repo - for ex: to create a bookmark/historical point for future ref or create a release point for stable version of the code
+
+git tag tagName		//to add tag
+
+git tag			//to get all tags in the branch
+
+git tag -d tagName	//to delete a local tag
+
+git push origin tagName 	// to push tag to remote
+
+git push origin -d tagName 	//to delete a remote tag
+
+-------------------------------------------------------------
+Stash - allows to park our undone work. When we use git stash, git stores all changes in a stash and resets the state 
+of the workspace to the prior commit state. 
+So in case if you are in the middle of object and require to jump over to the other task, and at the same time you don't want to lose your current edits, you can use GIT stash to park your changes.
+
+
+git stash -m commitMessage		//to create a stash
+
+git stash list 		//to get list of all git stashes
+
+git stash apply stashID		//to resume working on stash
+
+git stash apply 		//to switch to latest stash
+
+
+-------------------------------------------------------------
+
+git config -global user.name username	//to set username 
+git config -global user.email mail	//top set email
+
+git rebase <base> 		//Rebase the current branch onto <base>. This can be a commit ID, branch name or a tag.
+
+git clone url			//clone a remote repo
+
+git ls-files			//to get files in current working directory
+
+git ls-tree branchName 		//to get files in a specific branch
+
+
+
+-------------------------------------------------------------
+
+What are the common Git mistakes and how to fix them?
+
+Most common: Conflicts: A 'conflict' appears when the commit that has to be combined has some change in one place, and the current act also has a change at the same place. Git will not be easy to predict which change should take precedence. You need to use git rebase or git pull or git clone as appropriate.
+
+fatal: refusing to merge unrelated histories: This error occurs when a developer attempts to combine two unrelated projects into a single branch. This issue occurs when the branch contains inconsistent commit histories and tags with the pull request and clone. To overcome this you can use git pull origin master --allow-unrelated-histories .
+
+Committing directly on main: create a feature branch from the current state of main, where the accidental commit exists. This step preserves your changes under a new branch. Reset the main branch to prior commit state.
+
+Un-stage files/directories from Staging Area(Index)
+While adding and/or modifying files you often tend to use the default behavior of ‘git add’ command, which is to add all files and directories to the Index. Many a time you feel the need to un-stage certain files or modify them one last time before committing them.
+Syntax: git reset <filename/dirname>
+
+Forgot some changes in the last commit
+Let’s say you forgot to make some modifications and already committed your snapshot, or forgot to add a file to that last commit and also you do not want to make another commit to highlight your mistake.
+git reset --hard <commit-id> –reset the project to given commit id snapshot
+
+Not Cleaning Up Old Branches
+Syntax: git branch -d branchName
+
+Git best practices:
+•	Keep the Repository Clean and Up to Date – use git clone, git pull or git base as necessary.
+•	Don’t git push straight to master. Branch it out!
+•	Branch Frequently to Isolate Changes
+•	Use git diff or git status to track changes to files or file contents
+•	Do not commit unfinished work, use git stash to park your work.
+•	Keep Commits Small and Focused.
+•	Write descriptive and meaningful commit messages.
+•	Review your commit (code review)
+
+
+---------------------------------------------
+
+What is the purpose of the .gitignore file?
+The .gitignore file is used to specify files and directories that Git should ignore. This means these files will not be tracked or added to commits, even if they are in the working directory.
+Create a .gitignore file in your working directory and add file names that you wish to ignore –
+Eg: *.log or /referenceFiles. 
+Use git add .gitignore to apply changes
+
+
+
