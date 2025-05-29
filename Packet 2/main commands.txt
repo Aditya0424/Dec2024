@@ -1,0 +1,96 @@
+git init - 	//initialize empty repo on main 
+git init -b branchName		//initialize empty repo on a branch
+
+----------------------------
+To stage a file:
+git add fileName
+git add .
+
+To unstage a file:
+git reset filename
+git reset .
+
+use 'git diff' to check file changes
+git status tells you about which branch are you on, any untracked files, what are the tracked files, modified files , what changes are ready to be committed, 
+use git ls-files to check all files added to staging area
+---------------------------------------------------------
+
+Committing changes to local repo
+
+git commit fileName -m commitMessage
+git commit -m commitMessage
+
+use 'git log' or git log --oneline  for log of all commits, press 'q' to come out of git log
+TO check commits in the local main branch but not in the remote main branch: git log main origin/main
+
+To check what all changes have been added to local repo for a specific commit, use: git show --stat hashId    (hashId can be taken from git log --oneline)
+To check files, you can use git ls-files
+To check changes to files use git diff
+
+use git rm fileName to remove a file from commit, commit again to confirm your changes
+This will remove the file from staging. If you wish to undo this, use git restore filename
+
+If  you made changes to your files after committing, use git add again and git commit.
+
+use git reset commitId to reset the project to previous commit - Only resets the commit history. No files are deleted, and changes are preserved for further commits.
+
+use git reset commitId hard to reset the project to previous commit state and also forcefully overwrite files to state of previous commit.
+
+git reset --hard HEAD~1   //means "go back one commit"
+
+use git revert commitId to reset project to previous commit state
+
+Git reset will move the head pointer to previous commit. You will not see this history in git log. Lets say you wish to move back 2 commit. So if you do a git reset in this case, it will move to the previous commit as if 2 commits weren’t there. Hard reset will overwrite all the file changes as well.
+In case of git revert, any commit will not get deleted, it will create a new commit that will exclude all changes from the commit you want to revert. So, head will be at new commit
+
+
+----------------------------
+
+remote repo
+
+git remote add aliasName repoURL  ---- one time activity
+
+use git remote or git remote -v to get list of all remotes you've added
+use git remote remove aliasName to remove remote
+
+git push aliasName branchName    //push in a remote branch, creates a branch if it doesn't exist
+
+
+----------------------------
+to pull from remote
+
+git pull aliasName branchName		// gets remote branch and merges with current branch
+
+git pull --rebase origin branchName	//pulls the changes while keeping the commit history linear by rebasing rather than merging.
+If there are changes in the remote branch that are not in your local branch, it applies the remote branch's changes first.
+And then re-applies your local commits (those not already in the remote branch) on top of these fetched changes.
+
+git pull origin branchname --allow-unrelated-histories		// if repo's aren't synchronised and there are diff commit histories
+
+git fetch aliasName branchName		//gets a latest changes from remote branch and updates the local copy of your remote branch without merging it.
+
+
+
+The git fetch command is used to update your local repository with the latest changes from the remote repository without merging them. 
+You can then use git diff to compare the branches.
+
+git diff origin/main # See the differences between your local branch and remote branch 
+To check diff between local and remote branch:   git diff <local-branch> origin/<remote-branch>
+To check diff between 2 remote branch:  	 git diff origin/<branch-one> origin/<branch-two>
+
+
+first use git fetch to use above commands: 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
