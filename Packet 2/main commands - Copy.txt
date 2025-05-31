@@ -1,4 +1,4 @@
-
+test for fetch
 git init - 	//initialize empty repo on main 
 git init -b branchName		//initialize empty repo on a branch
 
